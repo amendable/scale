@@ -1,5 +1,5 @@
 {
-  "name": "@amendable/scales",
+  "name": "@amendable/scale",
   "version": "0.1.0",
   "main": "dist/commonjs/index.js",
   "module": "dist/esm/index.js",
@@ -8,11 +8,11 @@
     "dist/esm"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/amendable/scales",
+  "homepage": "https://github.com/amendable/scale",
   "bugs": {
-    "url": "https://github.com/amendable/scales/issues"
+    "url": "https://github.com/amendable/scale/issues"
   },
-  "repository": "amendable/scales",
+  "repository": "amendable/scale",
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",

@@ -1,17 +1,17 @@
 import isNumber from 'is-number'
 import defaultPropNames from './defaultPropNames'
-import defaultResolve from './defaultResolve'
+import defaultCalculation from './defaultCalculation'
 
 export default ({
   base = 16,
   propNames = defaultPropNames,
-  resolve = defaultResolve,
+  calculation = defaultCalculation,
 } = {}) => ({
   match: ({ key, value }) => (
     isNumber(value) && propNames.includes(key)
   ),
   resolve: ({ key, ...rest }) => ({
-    [key]: resolve({
+    [key]: calculation({
       ...rest,
       key,
       base,
