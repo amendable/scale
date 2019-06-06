@@ -1,3 +1,11 @@
+const allCorners = (prefix, suffix = '') => [
+  `${prefix}${suffix}`,
+  `${prefix}TopLeft${suffix}`,
+  `${prefix}TopRight${suffix}`,
+  `${prefix}BottomLeft${suffix}`,
+  `${prefix}BottomRight${suffix}`,
+]
+
 const allSides = (prefix, suffix = '') => [
   `${prefix}${suffix}`,
   `${prefix}Top${suffix}`,
@@ -12,6 +20,7 @@ export default [
   'fontSize',
   'width',
   'height',
+  ...allCorners('border', 'Radius'),
   ...allSides('border', 'Width'),
   'minWidth',
   'maxWidth',
